@@ -4,7 +4,7 @@
   #
   #  Install all apps and packages here.
   #
-  # TODO Fell free to modify this file to fit your needs.
+  # TODO Feel free to modify this file to fit your needs.
   #
   ##########################################################################
 
@@ -43,43 +43,22 @@
     # otherwise Apple Store will refuse to install them.
     # For details, see https://github.com/mas-cli/mas
     masApps = {
-      # TODO Feel free to add your favorite apps here.
-
+      # Essential development tools only
       Xcode = 497799835;
-      # Wechat = 836500024;
-      # QQ = 451108668;
     };
 
-    # taps = [];
-
     # `brew install`
-    # TODO Feel free to add your favorite apps here.
+    # Essential command line tools
     brews = [
       "wget" # download tool
-      "curl" # no not install curl via nixpkgs, it's not working well on macOS!
-      "aria2" # download tool
-      "httpie" # http client
+      "curl" # do not install curl via nixpkgs, it's not working well on macOS!
     ];
 
     # `brew install --cask`
-    # TODO Feel free to add your favorite apps here.
+    # Essential GUI applications
     casks = [
-      "firefox"
-      "google-chrome"
-      "visual-studio-code"
-
-      # IM & audio & remote desktop & meeting
-      "telegram"
-      "discord"
-
-      "anki"
-      "iina" # video player
-      "raycast" # (HotKey: alt/option + space)search, caculate and run scripts(with many plugins)
-      "stats" # beautiful system monitor
-
-      # Development
-      "insomnia" # REST client
-      "wireshark-app" # network analyzer
+      "firefox" # web browser
+      "visual-studio-code" # code editor
     ];
   };
 }
